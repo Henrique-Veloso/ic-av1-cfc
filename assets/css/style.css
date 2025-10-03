@@ -127,18 +127,22 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary); 
     color: var(--color-light);
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     margin-top: 1.5rem;
     border-radius: 50px;
     font-weight: 700;
     text-transform: uppercase;
     z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary); 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .destaques {
@@ -185,9 +189,19 @@ nav a:hover {
 .card .saiba-mais {
     display: inline-block;
     margin-top: 1rem;
-    color: var(--color-accent);
+    padding: 0.5rem 1rem;
+    color: var(--color-light); 
+    background-color: var(--color-accent); 
     font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
+
+.card .saiba-mais:hover {
+    background-color: var(--color-primary); 
+    color: var(--color-light);
+}
+
 
 .breadcrumb {
     padding: 0.5rem 0;
@@ -278,6 +292,47 @@ main h3 {
 .resultados tbody tr td:last-child {
     font-weight: 600;
     color: var(--color-accent);
+}
+
+.informacoes-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.informacoes-contato article {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.informacoes-contato h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+
+.informacoes-contato p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.localizacao h2 {
+    margin-top: 0;
+}
+
+.mapa-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container iframe {
+    display: block;
 }
 
 footer {
